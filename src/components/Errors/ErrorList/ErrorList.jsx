@@ -1,8 +1,8 @@
 function ErrorList({ errors }) {
   return (
     <ul>
-      {errors.map((error) => (
-        <li>
+      {errors.map((error, index) => (
+        <li key={index}>
           <p>{error}</p>
         </li>
       ))}
